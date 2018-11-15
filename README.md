@@ -2,13 +2,13 @@
 Containerised Packer with Python3 and AWS sdks installed.
 
 ## Usage
-Run as a command using entrypoint:
+Run as a command:
 
-    docker run --rm --entrypoint packer contino/packer
+    docker run --rm contino/packer
 
 Run as a shell and mount current directory as volumes:
 
-    docker run --rm -it -v ~/.aws:/root/.aws -v $(pwd):/opt/app contino/packer bash
+    docker run --rm -it -v ~/.aws:/root/.aws -v $(pwd):/opt/app --entrypoint bash contino/packer 
 
 Using docker-compose:
 
