@@ -1,4 +1,4 @@
-FROM hashicorp/packer:1.3.2
+FROM hashicorp/packer:1.4.3
 MAINTAINER "Contino APAC <delivery.au@contino.io>"
 
 RUN apk add --update --no-cache make bash python3 && \
